@@ -1,0 +1,18 @@
+Ad = input("ad")
+Soyad=input("soyad")
+vize=float(input("vize"))
+final=float(input("final"))
+kacırdıgıders=float(input("kacırdıgı ders"))
+derstakip=(100-(kacırdıgıders*5))*0.2
+sonuç=vize*0.3+final*0.5+derstakip
+print("sonuç",sonuç)
+d=open("ogrencıNotHesaplama.txt","w")
+d.write(Ad)
+d.write(Soyad)
+d.write(str(vize))
+d.write(str(final))
+d.write(str(kacırdıgıders))
+d.write(str(derstakip))
+d.write(str(sonuç))
+d.close()
+
