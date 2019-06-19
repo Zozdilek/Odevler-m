@@ -1,0 +1,14 @@
+kullanıcıadı=input("kullanıcıadı")
+anapara=float(input("anapara"))
+faizsuresi=float(input("faizsuresi"))
+faizoranı=float(input("faizoranı"))
+kullanıcıadı=anapara*faizsuresi*faizoranı/100
+toplamparamiktarı=faizsuresi+anapara
+print("sonuç",toplamparamiktarı)
+c=open("faizHesaplama.txt","w")
+c.write(str(kullanıcıadı))
+c.write(str(anapara))
+c.write(str(faizsuresi))
+c.write(str(faizoranı))
+c.write(str(toplamparamiktarı))
+c.close()
