@@ -1,0 +1,3 @@
+a=float(input("kilometresayısınıgir"))
+toplammil=a/1.609344
+print("toplammil",toplammil)
