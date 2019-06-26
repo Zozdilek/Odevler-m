@@ -1,0 +1,18 @@
+"""Sayi Tahmin Oyunu
+"""
+Tahminedilecek_sayi= 9
+denemesayisi= 0
+tahmin= 0
+
+while Tahminedilecek_sayi != tahmin:
+    tahmin = int(input("Bir sayi girin: "))
+    denemesayisi +=1
+if denemesayisi==1:
+    print("Tebrikler kazanilan yildiz sayisi 3: ")
+elif denemesayisi<=3:
+    print("Tebrikler kazanilan yildiz sayisi 2: ")
+elif denemesayisi<=5:
+    print("Tebrikler kazanilan yildiz sayisi 1: ")
+else:
+    print("Üzgünüz tahmin edilen sayidan fazla giris yaptıgınız icin hic yildiz kazanmadiniz: ")
+    
