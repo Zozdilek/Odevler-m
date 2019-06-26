@@ -1,0 +1,23 @@
+tercih= ("""--Yapmak istediginiz islemi seciniz---
+1-kilometreyi_mile_çevir
+2 ? mili_kilometreye_çevir(Cıkmak için q)""")
+
+secenek=1
+
+while secenek==1:
+    print(tercih)
+    secim=input()
+    if secim=="1":
+        uzunluk=float(input("Mile donusturmek istediginiz uzunluk kaç kilometredir?"))
+    
+        print("{} kilometre {} mildir". format (uzunluk,uzunluk/1.609344))
+   
+    elif secim=="2":
+        uzunluk=float(input("Kilometreye donusturmek istediginiz uzunluk kac mildir?"))
+                          
+        print("{} mil {} kilometredır.". format(uzunluk,uzunluk*1.609344))
+    elif secim=="q":
+        secenek="q"
+
+    else:
+        print("lutfen istenilen degerlerden birini giriniz: ")
