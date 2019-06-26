@@ -1,0 +1,38 @@
+dogumgünü = input("dogumgünü: ")
+ayiniz = input("ayiniz: ")
+inttarih = int( ayiniz + dogumgünü )
+print("Burcunuz")
+print(inttarih)
+
+if 122 <= inttarih <= 219:
+        burc='Oglak'
+elif 220 <= inttarih <= 320:
+        burc= 'Kova'
+elif 321  <= inttarih <= 420:
+        burc= 'Koc'
+elif 421 <=inttarih <= 521:
+        burc= 'Boga'
+elif 521 <=inttarih <= 622:
+        burc= 'İkizler'
+elif 521 <=inttarih <= 722:
+        burc= 'Yengec'
+elif 723 <=inttarih <= 822:
+         burc= 'Aslan'
+elif 823 <=inttarih <= 922:
+         burc= 'Basak'
+elif 923 <=inttarih <= 1022:
+         burc= 'Terazi'
+elif 1023 <=inttarih <=1221:
+         burc= 'Akrep'
+elif 1122 <=inttarih <=1221:
+         burc= 'Yay'
+elif 1222 <=inttarih <=121:
+         burc = 'Oglak'
+
+else:
+         burc= 'Balık'
+print(burc)
+    
+    
+       
+    
