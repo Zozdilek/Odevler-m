@@ -1,0 +1,31 @@
+"""ATM islemler:
+1- bakiye kontrolu
+2- para yatirma
+3- para cekme
+"""
+bakiye=1000
+
+menu='''yapmak istediginiz islemi seciniz:
+        1-bakiye kontrolu
+        2-para yatirmA
+        3-pra cekme
+        4-cikis'''
+kontrol=0
+while kontrol==0:
+    print(menu)
+    islem=int(input("islem:"))
+    if islem==1:
+        print("Toplam bakiyeniz:", bakiye, "€" )
+    elif islem==2:
+        tutar=float(input("yatirmak istediginiz tutari giriniz: "))
+        bakiye+=tutar
+        print("Tutar yatirildi. Toplam bakiyeniz",bakiye, "€")
+    elif islem==3:
+        tutar=float(input("Cekmek istediginiz tutarı giriniz: "))
+        bakiye-=tutar
+        print("Tutar cekildi. Toplam bakiyeniz", bakiye, "€")
+    elif islem==4:
+        kontrol=1
+    else:
+        print("Lutfen menudeki seceneklerden birini seciniz.")
+                    
