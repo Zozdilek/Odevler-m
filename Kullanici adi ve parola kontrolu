@@ -1,0 +1,24 @@
+mesaj = "kullanici adi uzunlugunuz 3 den kucuk ve 18 den fazla olmamalidir."
+
+kullanicidogru=0
+while kullanicidogru==0:
+    kullanici_adi = input("kullanici adinizi giriniz: ")
+    toplam_uzunluk = len(kullanici_adi)
+    if toplam_uzunluk <3:
+        print("kullanici adiniz 3 den kucuk olmamalıdır")
+    elif toplam_uzunluk>18:
+        print("kullanici adiniz 18 den buyuk olmamalidir")
+    else:
+       kullanicidogru=1
+paroladogru=0
+while paroladogru==0:
+    parola = input("parolanizi giriniz: ")
+    toplam_uzunluk = len(parola)
+    mesaj="parolanizin uzunlugu 6 karakterden uzun ve 12 karakterden kısa olmalidir."
+    if toplam_uzunluk<6:
+        print("parolanizin uzunlugu 6 karakterden kısa olmamalidir")
+    elif toplam_uzunluk>12:
+        print("parolanizin uzunlugu 12 karakterden uzun olmamalidir")
+    else:
+        paroladogru=1
+print("kullanici adiniz ve parolaniz",kullanici_adi,parola)
