@@ -1,0 +1,45 @@
+"""ALAN-HACIM HESAPLAMA
+    Karenin, ucgenin ve diktortgenin alanlarini hesaplayan, kup,kure ve koni
+    seklinde olan cisimlerin hacmini hesaplayan bir program yazmanizi istiyoruz. Kullanicidan hangi
+    seklin alanini veya hangi sekildeki cismin hacmini hesaplamak istedigini sormalisiniz
+    ve o islem icin gereken verileri isteyip hesaplamayi yapmalisiniz."""
+
+
+#Alan hesaplama
+
+while True:
+    import math
+    print("islem kodları")
+    print("1-dikdörtgenin alanı")
+    print("2-üçgenin alanı")
+    print("3-dairenin alanı")
+    print("4-kupun hacmi")
+    print("5-kurenin hacmi")
+    print("6-koninin hacmi")
+    kod=int(input("Kod giriniz"))
+    if(kod==1):
+          uzunkenar=int(input("uzun kenarı giriniz: "))
+          kisakenar=int(input("kisa kenarı giriniz: "))
+          dikalan=uzunkenar*kisakenar
+          print("Dikdörtgenin alanı:", dikalan)
+    elif (kod==2):
+          taban=int(input("Ücgenin taban degerini giriniz"))
+          yükseklik=int(input("Ücgenin yüksekligini giriniz"))
+          ucgenalan=(taban*yukseklik)/2
+          print("Ücgenin alanı:", ucgenalan)
+    elif(kod==3):
+        yarıcap=int(input("Yarıcapı giriniz."))
+        dairealan=(yarıcap**2)*math.pi
+        print("Dairenin alanı:",dairealan)
+    elif (kod==4):
+        uzunkenar=int(input("kenarı giriniz "))
+        print("kupun hacmi", uzunkenar**3)
+    elif (kod==5):
+        yarıcap=int(input("Yarıcapı giriniz "))
+        print("kurenin hacmi", 4/3*3.14*(yarıcap**3))
+    elif (kod==6):
+        taban=int(input("koninin taban yarıcapını giriniz "))
+        yükseklik=int(input("koninin yüksekligini giriniz "))
+        print("koninin hacmi", 1/3*3.14*(taban**2)*yükseklik)
+    else:
+        print("Yanlıs kod girdiniz: ")
