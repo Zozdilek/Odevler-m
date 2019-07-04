@@ -1,0 +1,19 @@
+"""FIZZ BUZZ
+    1'den 100'e kadar sayilari yazdirin. Fakat 3'e tam bolunen sayilarin yerine FIZZ,
+    5'e tam bolunen sayilarin yerine BUZZ, hem 3'e hem de 5'e tam bolunebilen
+    sayilarin yerine FIZZBUZZ yazsin."""
+
+a=0
+while a<100:
+    a=a+1
+
+    if (a%3==0) and (a%5==0):
+
+        print('FIZZBUZZ')
+    elif (a%3==0) and (a%5!=0):
+
+        print('FIZZ')
+    elif (a % 3 != 0) and (a % 5 == 0):
+        print('BUZZ')
+    else:
+        print(a)
