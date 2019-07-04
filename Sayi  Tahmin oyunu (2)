@@ -1,0 +1,24 @@
+#Sayi Tahmin Oyunu
+#0 ile 100 arasında bir sayi girin
+
+Tahminedilecek = 76
+Denemesayisi = 0
+
+x = 0
+
+while x != Tahminedilecek:
+    x = int(input("Lütfen bir sayi girin: "))
+    Denemesayisi=Denemesayisi+1
+    
+    if   (x>Tahminedilecek) and  (x-Tahminedilecek >=20):
+        print("cok yuksek tahminde bulundunuz daha dusuk bir sayi girmelisiniz: ")
+    elif  (x>Tahminedilecek) and (x-Tahminedilecek)<=20:
+        print("cok yaklastin biraz daha inmelisiniz.: ")
+    elif (x< Tahminedilecek ) and (Tahminedilecek-x) <=20:
+        print("cok yaklastınız biraz daha cikmalisiniz: ")
+    elif (x< Tahminedilecek ) and  (Tahminedilecek -x)>=20:
+        print("çok dusuk tahminde bulundunuz daha yuksek bir sayi giriniz: ")
+
+    elif Tahminedilecek ==x:
+        print("Tebrikler ",Denemesayisi,"'inci denemede dogru sayiyi buldunuz") 
+        break
