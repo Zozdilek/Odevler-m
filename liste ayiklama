@@ -1,0 +1,19 @@
+""" LISTE AYIKLAMA
+    Ekte gonderilmis olan text dosyasinda 3 takimin futbolcularinin isimleri ve
+    takimlari yer almaktadir. Sizden 3 tane dosya olusturmanizi
+    ve bu 3 dosyaya futbolculari takimlarina gore ayirmanizi istiyoruz."""
+
+with open ("futbolcular.txt", "r+", encoding= "utf - 8") as veri:
+    a=veri.readlines()
+    for futbolcu in a:
+
+        if "Beşiktaş" in futbolcu:
+            with open ("Beşiktaş.txt", "a", encoding= "utf - 8") as Besiktas:
+                Besiktas.write(futbolcu)
+
+        if "Galatasaray" in futbolcu:
+            with open ("Galatasaray.txt", "a", encoding= "utf - 8") as galatasaray:
+                galatasaray.write(futbolcu)
+        if "Fenerbahçe" in futbolcu:
+            with open ("Fenerbahçe.txt", "a", encoding= "utf - 8") as fenerbahce:
+                fenerbahce.write(futbolcu)
