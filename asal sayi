@@ -1,0 +1,9 @@
+sayi = int(input("Bir sayi giriniz: "))
+asal=1
+for bolen in range (2, sayi):
+    if(sayi%bolen==0):
+        print("Sayiniz asal degildir")
+        asal=0
+        break
+if(asal==1):
+    print("Sayiniz asaldir")
