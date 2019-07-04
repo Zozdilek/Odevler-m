@@ -1,0 +1,18 @@
+while True:
+
+    kullanici = raw_input("cikis icin q\nkullanici adi: ")
+
+    if kullanici=="q":
+        break
+    else:
+        with open("hesaplar.txt","r") as f:
+            data=f.read()
+            if kullanici in data:
+                print("Bu kullanici ismi var. Lutfen farkli bir isim giriniz.")
+                continue
+            else:
+                parola = raw_input("Kullanici parolasini giriniz:")
+                with open("hesaplar.txt","a") as k:
+                    k.write("\nkullanici adi=" + kullanici)
+                    k.write("\nparola=" + parola)
+                    k.close()
