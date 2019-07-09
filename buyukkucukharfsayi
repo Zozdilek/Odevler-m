@@ -1,0 +1,23 @@
+"""Kullanıcıdan bir input alınız. Girmiş olduğu inputta büyük harf
+sayısı, küçük harf sayısı, rakam sayısı ve bunların haricindeki
+özel karakter sayılarını veren bir program yazınız."""
+
+kelime = input("Lütfen bir kelime veya cümle giriniz:")
+kucuk_sayi = 0
+buyuk_sayi = 0
+sayi = 0
+karakter = 0
+
+for harf in kelime:
+    if harf.islower() == True:
+        kucuk_sayi += 1
+
+    elif harf.isupper()== True:
+        buyuk_sayi = buyuk_sayi + 1
+
+    elif harf.isnumeric() == True:
+        sayi = sayi + 1
+
+    else:
+        karakter += 1
+print("küçük harf sayisi", kucuk_sayi, "büyük harf sayisi", buyuk_sayi, "sayilar", sayi, "özel karakter sayisi", karakter)
