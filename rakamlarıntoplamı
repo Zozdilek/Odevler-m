@@ -1,0 +1,13 @@
+"""Kullanıcıdan bir input alınız. Girmiş olduğu inputtaki rakamların toplamını 
+veren bir program yazınız. (Kullanıcı rakam girmek zorunda değil.
+farklı karakter girişi de yapabilir.)
+Örnek input = "art12kl4*"""
+
+Toplam=0
+
+rakam=input("Lütfen bir rakam giriniz: ")
+for i in rakam:
+    if i.isnumeric()==True:
+        Toplam+=int(i)
+
+print(Toplam)
