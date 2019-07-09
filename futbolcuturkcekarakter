@@ -1,0 +1,14 @@
+"""Futbolcular dosyasındaki futbolcu isimlerini yazdığınız program ile Türkçe
+karakter içermeyecek bir hale getirip yeni bir dosyaya kaydediniz"""
+
+yeni_dosya=open("yeni_futbolcular.txt", "w+",encoding="utf -8") #
+turkce_karakterler="çıüğöşİĞÜÖŞÇ"
+ingilizce_karakterler="ciugosIGUOSC"
+futbol=0
+with open("futbolcular.txt","r+", encoding="utf=8") as liste:
+    for i in liste:
+        for a in turkce_karakterler:
+            if a in i:
+                z=turkce_karakterler.index(a)
+                i=i.replace(a,ingilizce_karakterler[z])#karakterlerin yerini değiştirmek için yazıldı replace
+                yeni_dosya.write(i)
