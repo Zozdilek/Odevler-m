@@ -1,0 +1,10 @@
+"""Futbolcular dosyasındaki futbolculardan ismi sesli
+harf ile başlayanları ayrı bir dosyaya yazdırınız."""
+
+sesli=open("sesli.txt","w",encoding="utf-8") #sesli harfle başlaması gereken dosyayı açtım
+sesli_harfler="eiouöüıaEIOUÖÜIA"#sesli harfleri tanımladım
+with open("futbolcular.txt","r",encoding="utf-8") as liste:#futbolcu dosyasını okuma modunda açtım
+    for i in liste:#futbolcu isimlerini kontrol ettim
+        for u in sesli_harfler:#sesli harfle başlayıp başlamadıklarına baktım.
+            if i[0]==u:#sesli harfle başlıyorlarsa aşağıda futbolcu dosyasına ekledim
+                sesli.write(i)# ekleme yapan kısım
